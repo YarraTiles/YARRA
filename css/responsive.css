@@ -242,8 +242,13 @@
         -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1,1fr);
     }
-
-
+    .loader {
+        width: 100px;
+        height: 100px;
+    }
+    .loader2, .loader2 div {
+        padding: 4px;
+    }
 
 
 
