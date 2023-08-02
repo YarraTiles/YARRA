@@ -1,12 +1,4 @@
 $(document).ready(function () {
-
-	$(".logo").animate({
-		top: "-100px",
-		opacity: 0
-	}, 1000, function () {
-		$(".preloader").slideUp(500);
-	});
-
 	//Owl Carousel
 	$('.banner-carousel').owlCarousel({
 		items: 1,
@@ -20,6 +12,17 @@ $(document).ready(function () {
 		smartSpeed: 1000,
 	});
 });
+
+//LOADER
+$(window).on("load", function () {
+	$(".logo").animate({
+		top: "-100px",
+		opacity: 0
+	}, 1000, function () {
+		$(".preloader").slideUp(500);
+	});
+});
+
 
 // HEADER
 $(window).scroll(function () {
