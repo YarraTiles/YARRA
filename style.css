@@ -332,14 +332,17 @@ section.banner-area {
     left: 0;
     right: 0;
     margin: auto;
+    max-width: 332px;
 }
 .elegance-img img:nth-child(2){
     top: 200px;
     left: 30px;
+    max-width: 231px;
 }
 .elegance-img img:nth-child(3) {
     top: 250px;
     right: 14%;
+    max-width: 180px;
 }
 .elegance-img img:nth-child(4) {
     top: 618px;
@@ -349,10 +352,12 @@ section.banner-area {
 .elegance-img img:nth-child(5){
     top: 450px;
     right: 0;
+    max-width: 200px;
 }
 .elegance-img img:nth-child(6){
     top: 740px;
     right: 190px;
+    max-width: 355px;
 }
 
 
