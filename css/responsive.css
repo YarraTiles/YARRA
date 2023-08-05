@@ -21,9 +21,6 @@
     .marquee span {
         font-size: 30px;
     }
-    .marquee span::before {
-        left: -38px;
-    }
     .single-footer-top-widget {
         padding: 25px;
     }
@@ -100,7 +97,6 @@
         font-size: 20px;
     }
     .marquee span::before {
-        left: -33px;
         width: 10px;
         height: 10px;
     }
@@ -223,12 +219,6 @@
     .project-image-version-a {
         height: 70vh;
     }
-    .marquee span::before{
-        display: none;
-    }
-    .marquee div {
-        width: 350%;
-    }
     .quality-area {
         padding: 0 15px;
     }
@@ -250,9 +240,20 @@
     .loader2, .loader2 div {
         padding: 4px;
     }
-
-
-
+    .marquee div {
+        width: 475%;
+    }
+    .cat_size ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .cat_size ul li {
+        padding: 5px 0;
+    }
+    .copyright-area p {
+        padding: 0 15px;
+    }
 
 }
 @media all and (max-width: 400px){
