@@ -11,9 +11,22 @@ $(document).ready(function () {
 		autoplayTimeout: 4000,
 		smartSpeed: 1000,
 	});
+
+	//SECTION TO SECTION
+	$(document).on('click', 'a[href^="#"]', function (event) {
+		event.preventDefault();
+
+		$('html, body').animate({
+			scrollTop: $($.attr(this, 'href')).offset().top
+		}, 500);
+	});
+
+	
 });
 
-//LOADER
+
+
+//Preloader
 $(window).on("load", function () {
 	$(".logo").animate({
 		top: "-100px",
@@ -22,7 +35,6 @@ $(window).on("load", function () {
 		$(".preloader").slideUp(500);
 	});
 });
-
 
 // HEADER
 $(window).scroll(function () {
